@@ -1,0 +1,415 @@
+/* ----------------------------------------------------- Typo ------ */
+
+@font-face {
+    font-family:'Murmure';
+    src: url(font/le-murmure.otf);
+
+}
+
+@font-face{
+    font-family:'Parabole';
+    src: url(font/parabole-displayregular.otf);
+}
+
+@font-face{
+    font-family:'Resistance';
+    src: url(font/Resistance_générale.otf);
+}
+
+@font-face{
+    font-family:'Maak';
+    src: url(font/MaakhavenDisplay.ttf);
+}
+
+
+/* ----------------------------------------------------- Accueil ------ */
+body{
+    background-color: black;
+    color: white;
+
+}
+/*
+div {
+border: 1px solid red;
+}
+*/
+
+
+div.wrapper-accueil {
+    display: flex;
+    flex-wrap: wrap;
+    height: 98vh;
+    width: auto;
+    /*border: 1px solid blue;*/
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+
+}
+
+div.lignex2 {
+    flex: 40%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+div.lignex3 {
+    flex: 0 0 30%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.vertical_DA{
+    font-family: "Murmure";
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+.vertical_DI{
+    font-family: "Parabole";
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+.vertical_PR{
+    font-family: "Maak";
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+.vertical_LRA{
+    font-family: "Resistance";
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+
+/*
+.vertical {
+padding:0;
+margin:0;
+list-style:none;
+}
+
+
+.vertical  ul{
+list-style:none;
+width: 700px;
+}
+
+.vertical  li {
+position: relative;
+background:;
+}
+
+.vertical  a {
+display:block;
+text-decoration: none;
+background-color: black;
+}
+
+.vertical  ul {
+position: absolute;
+left:-999em;
+}
+
+.vertical  li:hover ul {
+top: 0;
+left: 740px;
+}
+*/
+a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.image-svg{
+    width: 65%;
+}
+
+
+.vertical {
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align: center;
+    /* width: 180px;*/
+}
+.vertical ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align: center;
+}
+
+.vertical li li {
+    max-height:0;
+    overflow: hidden;
+    transition: all .5s;
+    margin:0
+}
+.vertical a {
+    display:block;
+    text-decoration: none;
+}
+.vertical ul li a, .vertical li:hover li a {
+    font-size:3vw;
+    line-height: 1.5;
+}
+
+.vertical li:hover li {
+    max-height: 15em;
+}
+
+.vertical_DA a:hover{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: currentColor;
+    -webkit-text-stroke-width: .02em;
+}
+.vertical_DI a:hover{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: currentColor;
+    -webkit-text-stroke-width: .02em;
+}
+.vertical_PR a:hover{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: currentColor;
+    -webkit-text-stroke-width: .02em;
+}.vertical_LRA a:hover{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: currentColor;
+    -webkit-text-stroke-width: .02em;
+}
+
+
+
+/* ----------------------------------------------------- Page galerie ------ */
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    flex: 33.33%;
+    align-self: flex-end;
+}
+
+/* ----------------------------------------------------- Page galerie / Navigation ------ */
+
+.navbar {
+    height: 10vh;
+    width: auto;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: block;
+}
+
+.titre {
+    height: 90px;
+    width: 335.8px;
+    float: left;
+    text-align: center;
+    /*list-style: none;
+    font: normal bold 13px/1em Arial, Verdana, Helvetica;*/
+    padding: 0;
+    margin: 0;
+    font-size:45px;
+    text-transform: uppercase;
+
+}
+
+li {
+    list-style: none;  
+}
+.navbar a {
+    padding: 18px 0;
+    text-decoration: none;
+    display: block;
+    align-items: center;
+
+}
+
+.navbar li ul {
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.navbar li:hover ul{
+    display: block;
+
+}
+
+#menu:hover ~ #hide3 {
+    display: none;
+}
+
+.selection :hover{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: currentColor;
+    -webkit-text-stroke-width: .02em;
+}
+.azerty li {
+}
+
+.DA{
+    font-family: 'Murmure';
+
+}
+
+.Bazar{
+    font-family: 'Parabole';
+}
+
+
+.LRA{
+    font-family: 'Resistance';
+}
+
+.Pro{
+    font-family: 'Maak';
+}
+
+a:hover .base{
+    display: none; }
+
+.DA:hover .vol:before{
+    content:"⚡"; }
+
+.Bazar:hover .vol:before{
+    content:"<3"; }
+
+.Pro:hover .vol:before{
+    content:"[             ]"; }
+
+.LRA:hover .vol:before{
+    content:"|||||||||||||||||"; }
+
+
+
+
+/* ----------------------------------------------------- SlideShow ------ */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 85vw;
+    max-height: 75vh;
+    position: relative;
+    margin: auto;
+}
+
+
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.left-arrow{
+    height: 50vh;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    cursor: url(cursor/left_arrow.png), auto;
+}
+
+.right-arrow{
+    height: 50vh;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    cursor: url(cursor/right_arrow.png), auto;
+}
+
+.fleche{
+    display: inline-block;
+    position: relative;
+    padding: 25vh;
+    margin: -25vh;
+
+
+}
+.columns a{
+}
+
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: white;
+    font-size: 4vw;
+    padding: 8px 12px;
+    position: absolute;
+    top:;
+    font-family: "Parabole";
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: currentColor;
+    -webkit-text-stroke-width: .03em;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.texte_int{
+    align-self: flex-end;
+    font-family: "Parabole";
+    padding:0 2vw;
+}
+
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <title>Lili</title>
+        <meta charset="utf-8"/>
+        <link href="style.css" rel="stylesheet"/>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        </link>
+    </head>
+
+<body>
+
+    <div class="navbar" id="menu">
+        <ul class="bla">
+            <li class="DA titre"><a href="#"> 
+                <span class="base">direction artistique</span>
+                <span class="vol"></span>
+                </a>
+                <ul>
+                    <li class="selection"><a href="projects.html">PROJET 1</a></li>
+                    <li class="selection"><a href="#">PROJET 2</a></li>
+                    <li class="selection"><a href="#">PROJET 3</a></li>
+                    <li class="selection"><a href="#">PROJET 4</a></li>
+                </ul>
+            </li>
+            <li class="Bazar titre"><a href="#">
+                <span class="base">divers</span>
+                <span class="vol"></span>
+                </a>
+                <ul>
+                    <li class="selection"><a href="projects.html">Divergent</a></li>
+                    <li class="selection"><a href="#">Miro-Mori</a></li>
+                    <li class="selection"><a href="#">Dame de cœur</a></li>
+                    <li class="selection"><a href="#">Sens cachée</a> </li>
+                </ul>
+            </li>
+            <li class="Pro titre"><a href="#">
+                <span class="base">Projets</span>
+                <span class="vol"></span>
+
+                </a>
+                <ul>
+                    <li class="selection"><a href="projects.html">PROJET 1</a></li>
+                    <li class="selection"><a href="#">PROJET 2</a></li>
+                    <li class="selection"><a href="#">PROJET 3</a></li>
+                    <li class="selection"><a href="#">PROJET 4</a></li>
+                </ul>
+            </li>
+            <li class="LRA titre"><a href="#"> 
+                <span class="base">Lili Rose L'AZOU</span>
+                <span class="vol"></span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="columns" id="hide3">
+
+
+        <div class="column" id="hide1">
+            <div class="left-arrow" id="hide2"> 
+
+                <a class="prev fleche" onclick="plusSlides(-1)"></a>
+            </div>
+            <p class="texte_int">aaaaorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="column">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1</div>
+                    <img src="images/008.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2</div>
+                    <img src="images/007.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3</div>
+                    <img src="images/003.jpg" style="width:100%">
+
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="right-arrow" id="hide2"> 
+
+                <a class="next fleche" onclick="plusSlides(+1)"></a>
+            </div>
+            <p class="texte_int">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+
+    <script> 
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+
+    </script>
+
+</body>
+</html>
+
